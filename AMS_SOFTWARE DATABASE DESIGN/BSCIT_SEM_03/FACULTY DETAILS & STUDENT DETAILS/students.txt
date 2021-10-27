@@ -1,0 +1,6 @@
+student details:
+
+roll_no name emailID getline
+roll_no name emailID getline
+roll_no name emailID getline
+roll_no name emailID getline
