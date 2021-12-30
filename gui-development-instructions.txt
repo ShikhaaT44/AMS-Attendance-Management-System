@@ -1,0 +1,16 @@
+*GUI INSTRUCTION*
+
+1.Faculty Name
+2.Email address of faculty Email address
+3.Department  Name
+4.Joning year
+5.User name 
+6.Set password
+7.Re-enter password
+
+
+password and username reset using email otp real time
+welcome letter design
+OTP letter letter Design
+reset letter if you wish 
+

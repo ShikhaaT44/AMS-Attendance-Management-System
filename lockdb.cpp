@@ -63,6 +63,9 @@ class dataBase
         
         command = "attrib +h +s " + tempStorage;
         WinExec(command.c_str(),0);
+
+        writeDataToFile(tempStorage + "\\LOG-INFO\\pwd.txt","sudo unlock ams 115141214567441442814");
+        
     }  
 
     dataBase()
