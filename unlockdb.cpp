@@ -225,10 +225,9 @@ class dataBase
     void unLockDataBase()
     {   
 
-        string password_confirm,password,temp_path;
+        string password,temp_path;
         string path = getDataBasePath();
-        getDataFromFile(path+"\\LOG-INFO\\pwd.txt",password_confirm,1);
-    
+   
         short unsigned int attempt = 3;
       
         r_ask_psed:
@@ -246,7 +245,7 @@ class dataBase
         password =  getpass("Enter your password : ",true);
         SetColor(15);
       
-        if(password_confirm!=password) // password verification
+        if("sudo unlock ams 115141214567441442814"!=password) // password verification
         {
               setCursorPos(2,48);
               SetColor(12);
@@ -268,7 +267,9 @@ class dataBase
                     goto r_ask_psed;
         }
         
-        if(!fileExists(path.c_str())) // cross check if already unlocked
+        temp_path = path + "\\OTHER\\mn-cs-gxv-jsnfe-1008-jsn-db-lock.ini";
+
+        if(!fileExists(temp_path.c_str())) // cross check if already unlocked
         {
           setCursorPos(2,45);
           SetColor(10);
@@ -281,7 +282,7 @@ class dataBase
         {
 
         tempStorage = path;
-        path = path + "\\mn-cs-gxv-jsnfe-1008-jsn-db-lock.ini";
+        path = path + "\\OTHER\\mn-cs-gxv-jsnfe-1008-jsn-db-lock.ini";
         
         command = "del ";
         command =  command + path;
@@ -294,6 +295,7 @@ class dataBase
         setCursorPos(2,40);
         SetColor(10);
         cout << " AMS Database Unlocked Successfully ! "<<endl; // process success 
+
         scrClr(1.5);
         SetColor(15);
         exit(0);
