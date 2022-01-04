@@ -1,6 +1,0 @@
-harshil ramani (name)
-harshilramani.mscit20@vnsgu.ac.in (email)
-Department of ICT(department name)
-2020(year of joining)
-harshilramani97(username/by-default~email)
-mscitISgre@t79(password)
