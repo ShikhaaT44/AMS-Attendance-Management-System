@@ -1,2 +1,5 @@
-C:\Users\DELL\OneDrive\Documents\{JSN-1008-JSK-22-10-2021}
-unlocker for database  :  pass : sudo unlock ams 115141214567441442814
+unlocker for database  :  
+
+PATH : C:\Users\DELL\OneDrive\Documents\{JSN-1008-JSK-22-10-2021}
+
+pass : sudo unlock ams 115141214567441442814
